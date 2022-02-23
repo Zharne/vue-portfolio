@@ -1,8 +1,9 @@
 <template>
   <div class="sidenav">
+    <img src="https://i.postimg.cc/ry7cbbcP/depositphotos-346967382-stock-illustration-initial-logo-design-vector-template.jpg" style="border-radius:50%">
   <a href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#education">Education</a>
+  <a href="#about-me">About</a>
+  <a href="#resume">Resume</a>
   <a href="#projects">Projects</a>
   <a href="#testimonials">Testimonials</a>
   <a href="#contact">Contact</a>
@@ -25,7 +26,7 @@ body {
 
 .sidenav {
   height: 100%;
-  width: 160px;
+  width: 200px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -40,7 +41,7 @@ body {
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 25px;
   color: #818181;
   display: block;
 }
@@ -49,14 +50,17 @@ body {
   color: #f1f1f1;
 }
 
-.main {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
+main {
+  margin-left: 200px;
+  font-size: 28px; 
   padding: 0px 10px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
+@media screen and (max-width: 450px) {
+  .sidenav {
+    padding-top: 15px;
+    background-color: blue;
+    }
   .sidenav a {font-size: 18px;}
 }
 
